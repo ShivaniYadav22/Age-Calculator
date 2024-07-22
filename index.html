@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <title>Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <form class="input-form" action="index.html" method="post">
+
+
+        <div class="card-input">
+          <div class="input-label">
+            <label for="day">DAY</label>
+            <input class="day" type="number" min="01" max="31" size="2" class="day" name="day" placeholder="DD">
+            <p class=" p-invalid">Must be a valid day</p>
+
+              <p class=" p-required"><span class="p-day"> </span></p>
+
+
+          </div>
+          <div class="input-label">
+            <label for="month">MONTH</label>
+            <input type="number" class="month" size="2" name="month" min="01" max="12" value="" placeholder="MM">
+            <p class=" p-invalid">Must be a valid month</p>
+            <p class="p-month p-required"></p>
+          </div>
+
+
+          <div class="input-label">
+            <label for="year">YEAR</label>
+            <input type="number" class="year" name="year" size="4" min="0000" max="9999" value="" placeholder="YYYY">
+            <p class=" p-invalid">Must be a valid year</p>
+            <p class="p-year p-required"></p>
+          </div>
+        </div>
+      </form>
+
+      <div class="card-hr">
+        <hr>
+        <div class="card-icon" onclick="Age()">
+          <img src="assets\images\icon-arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="card-result">
+        <h1 class="card-age"><span class="resultYear"> --</span><em> years</em> </h1>
+        <h1 class="card-age"><span class="resultMonth"> --</span><em> months</em></h1>
+        <h1 class="card-age"><span class="resultDay"> --</span> <em> days </em> </h1>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- <input type="button" name="" onclick="Age()" value="click"> -->
+
+
+
+
+  <div style="margin-top: 4rem;" class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Alone-Y154">Yashwanth Krishna</a>.
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 94%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 700px;
+  height: 500px;
+  background: white;
+  margin-top: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 25px 25px 150px 25px;
+}
+
+label {
+  font-size: 0.6rem;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+
+input {
+  width: 8rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border: 1px hsl(0, 0%, 86%) solid;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:invalid {
+  border: none;
+  outline: 1px solid hsl(0, 100%, 67%);
+}
+
+.p-required {
+  font-size: 0.6rem;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  margin-top: 0.5rem;
+}
+
+.p-invalid {
+  font-size: 0.6rem;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  margin-top: 0.5rem;
+  display: none;
+}
+
+form:invalid .p-invalid {
+  display: block;
+}
+
+form:invalid label {
+  color: hsl(0, 100%, 67%);
+}
+
+.card-input {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: -1rem;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+hr {
+  margin-top: 1rem;
+  height: 2px;
+  background-color: hsl(0, 0%, 86%);
+  border: none;
+}
+
+.card-icon {
+  background: hsl(259, 100%, 65%);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 20px;
+  float: right;
+  margin-top: -2rem;
+  cursor: pointer;
+}
+
+.card-icon:hover {
+  background: hsl(0, 0%, 8%);
+}
+
+.card-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.card-result {
+  margin-top: 1rem;
+}
+
+.resultYear, .resultMonth, .resultDay {
+  color: hsl(259, 100%, 65%);
+}
+
+.card-age {
+  font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+  }
+
+  input {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+    padding-left: 0.8rem;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 18px;
+    margin-top: -2rem;
+    margin-right: 8rem;
+  }
+
+  .card-icon img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .card-hr {
+    margin-top: 2rem;
+  }
+
+  .card-result {
+    margin-top: 2.5rem;
+  }
+
+  .card-age {
+    font-size: 3.5rem;
+  }
+}
